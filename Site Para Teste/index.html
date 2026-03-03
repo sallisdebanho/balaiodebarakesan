@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BALAIO DE BARAKESAN | O MERCADO DO AXÉ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="top-bar">
+<img src="imagens/login.png" title="Login / Cadastro">
+<img src="imagens/truck.png" title="Rastreio de Encomenda">
+<img src="imagens/cart.png" title="Carrinho" onclick="toggleCart()">
+</div>
+
+<header>
+<img src="imagens/logo.jpg" class="logo" alt="Logo">
+<h1>BALAIO DE BARAKESAN</h1>
+<p>O MERCADO DO AXÉ</p>
+</header>
+
+<div class="container">
+
+<!-- PLENUM -->
+<div class="card plenum-card">
+<img src="imagens/plenum.jpg" alt="Plenum">
+<div class="tooltip">
+Saúde, estrutura mental, estabilidade emocional, disposição.<br>
+Sair da depressão, começar novo projeto, trabalhos espirituais, elevar vibração.
+</div>
+<h2>Sallis Plenum</h2>
+<div class="option">
+<p>Embalagem Original (Vidro) 60g</p>
+<div class="price">R$ 100,00</div>
+<button onclick="addToCart('Sallis Plenum - Vidro 60g',100)">Adicionar</button>
+</div>
+<div class="option">
+<p>Refil 60g</p>
+<div class="price">R$ 70,00</div>
+<button onclick="addToCart('Sallis Plenum - Refil 60g',70)">Adicionar</button>
+</div>
+</div>
+
+<!-- FEMINI -->
+<div class="card femini-card">
+<img src="imagens/femini.jpg" alt="Femini">
+<div class="tooltip">
+Disposição, beleza, magnetismo, cura emocional profunda.<br>
+Homens: cura emocional (término, luto, traumas).
+</div>
+<h2>Sallis Femini</h2>
+<div class="option">
+<p>Embalagem Original (Vidro) 60g</p>
+<div class="price">R$ 100,00</div>
+<button onclick="addToCart('Sallis Femini - Vidro 60g',100)">Adicionar</button>
+</div>
+<div class="option">
+<p>Refil 60g</p>
+<div class="price">R$ 70,00</div>
+<button onclick="addToCart('Sallis Femini - Refil 60g',70)">Adicionar</button>
+</div>
+</div>
+
+<!-- ASSEPSIA -->
+<div class="card assepsia-card">
+<img src="imagens/assepsia.jpg" alt="Assépsia">
+<div class="tooltip">
+Limpeza profunda. Limpa e purifica filtrando o mal sem descarregar.
+</div>
+<h2>Sallis Assépsia</h2>
+<div class="option">
+<p>Embalagem Original (Vidro) 60g</p>
+<div class="price">R$ 100,00</div>
+<button onclick="addToCart('Sallis Assépsia - Vidro 60g',100)">Adicionar</button>
+</div>
+<div class="option">
+<p>Refil 60g</p>
+<div class="price">R$ 70,00</div>
+<button onclick="addToCart('Sallis Assépsia - Refil 60g',70)">Adicionar</button>
+</div>
+</div>
+
+</div>
+
+<!-- Carrinho flutuante -->
+<div class="cart-float" id="cart-float">
+<h2>🛒 Carrinho</h2>
+<div id="cart-items"></div>
+<div class="total">Total: R$ <span id="total">0.00</span></div>
+<div class="coupon">
+<input type="text" id="coupon" placeholder="Cupom de desconto">
+<button onclick="applyCoupon()">Aplicar</button>
+</div>
+<div class="payment-options">
+<p>Escolha a forma de pagamento ao finalizar a compra</p>
+<div class="payment-methods" id="payment-methods">
+  <img src="imagens/visa.svg" title="Visa">
+  <img src="imagens/mastercard.svg" title="Mastercard">
+  <img src="imagens/boleto.svg" title="Boleto">
+  <img src="imagens/pix.svg" title="Pix">
+  <img src="imagens/paypal.svg" title="PayPal">
+</div>
+</div>
+</div>
+
+<!-- Aba lateral WhatsApp minimalista -->
+<div class="whatsapp-tab" onclick="window.open('https://wa.me/5500000000000','_blank')">
+💬
+</div>
+
+<!-- Rodapé -->
+<footer>
+<div class="payment-methods">
+  <img src="imagens/visa.svg" title="Visa">
+  <img src="imagens/mastercard.svg" title="Mastercard">
+  <img src="imagens/boleto.svg" title="Boleto">
+  <img src="imagens/pix.svg" title="Pix">
+  <img src="imagens/paypal.svg" title="PayPal">
+</div>
+<p>&copy; 2026 Balaio de Barakesan</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
